@@ -22,7 +22,9 @@ main{
     background-position: 85% 50%;
     background-repeat: no-repeat;
     background-color: #71808E;
-    background-size: 55%;
+    background-size: 60%;
+    overflow: hidden;
+    transition: all 1.5s ease-in-out;
 }
 nav{
     width: 100%;
@@ -77,7 +79,9 @@ nav i{
     height: 50px;
     transition: all ease-in-out 0.2s;
 }
-nav h1 span{
+
+#navspn{
+    display: inline;
     font-weight: 300;
 }
 nav a{
@@ -160,11 +164,24 @@ nav a:hover{
 }
 .pg1content h1{
     position: absolute;
-    bottom:14%;
+    bottom:-3%;
+    left: 1%;
     letter-spacing: -5px;
     font-size: 24vw;
     font-weight: 500;
     line-height: 3.1vw;
+    height: 18vw;
+    display: flex;
+    align-items: center;
+    /* background-color: white; */
+}
+.pg1 h1 span{
+    height: 100%;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    /* background-color: red; */
+    overflow: hidden;
 }
 .pg2{
     width: 100%;
@@ -618,18 +635,22 @@ footer{
     /* background-color: yellow; */
 }
 .f1a h1{
+    width: 90%;
+    height: auto;
     font-size: 16vw;
     line-height: 16vw;
     white-space: nowrap;
     font-weight: 600;
     letter-spacing: -47px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
     /* background-color: white; */
 }
 .f1 h1 span{
-    display: inline-block;
-    width: 12vw;
-    height: auto;
-    overflow: hidden;
+    height: 100%;
+    width: 23%;
+    /* display: inline-block; */
     /* background-color: red; */
 }
 .f1b{
